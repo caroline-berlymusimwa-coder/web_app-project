@@ -1,0 +1,398 @@
+/* 
+   GLOBAL STYLES
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f8f9fa;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topnav a:hover {
+    background-color: #f2f2f2;
+    color: #333;
+}
+.topnav-right {
+    float: right;
+}
+.banner {
+  background: linear-gradient(
+      #0000008c,
+      #0000008c
+    ),
+    url("https://images.unsplash.com/photo-1521587760476-6c12a4b040da");
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: white;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.banner p {
+  font-size: 1.2rem;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.section-padding {
+  padding: 60px 0;
+}
+
+/* =========================
+   BOOK CARDS
+========================= */
+
+.book-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+}
+
+.book-card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.book-card .card-body {
+  text-align: center;
+}
+
+.book-card h5 {
+  font-weight: 600;
+}
+
+.price {
+  color: #198754;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-custom {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  background: #0b5ed7;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   FORMS
+========================= */
+
+.form-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 10px #0d6efd40;
+}
+
+/* =========================
+   ACCOUNT PAGE
+========================= */
+
+.account-card {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.account-card:hover {
+  transform: translateY(-4px);
+  transition: 0.3s;
+}
+
+
+/* =========================
+   FAQ PAGE
+========================= */
+
+.accordion-button:not(.collapsed) {
+  background-color: #e9f2ff;
+  color: #0d6efd;
+}
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #212529;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+  .banner {
+    min-height: 350px;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .section-padding {
+    padding: 40px 0;
+  }
+}
+/* =========================
+   PAGE LAYOUT
+========================= */
+
+.content {
+  width: 75%;
+  float: left;
+  padding: 30px;
+  background-color: #ffffff;
+  min-height: 800px;
+}
+
+.sidebar {
+  width: 25%;
+  float: right;
+  padding: 20px;
+  background-color: #4e779d;
+  border-left: 4px solid #0d6efd;
+  min-height: 800px;
+}
+
+/* =========================
+   SIDEBAR STYLING
+========================= */
+
+.sidebar {
+  width: 22%;
+  float: right;
+  padding: 20px;
+  background-color: #2c3e50;
+  border-left: 4px solid #ffc107;
+  min-height: 800px;
+}
+
+.sidebar h2 {
+  color: #ffc107;
+  border-bottom: 2px solid #ffc107;
+  padding-bottom: 5px;
+}
+
+.sidebar p,
+.sidebar li,
+.sidebar a {
+  color: white;
+}
+
+.sidebar a:hover {
+  color: #ffc107;
+}
+
+/* =========================
+   BOOK SECTION EFFECTS
+========================= */
+
+.content h3 {
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.content h3:hover {
+  background-color: #e9f2ff;
+  color: #063375;
+  transform: translateX(8px);
+  cursor: pointer;
+}
+
+/* =========================
+   HIGHLIGHT TEXT
+========================= */
+
+.highlight {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* =========================
+   BOOK CATEGORY HEADINGS
+========================= */
+
+.content h2 {
+  background-color: #0d6efd;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   HORIZONTAL LINES
+========================= */
+
+.content hr {
+  margin: 25px 0;
+  border: none;
+  border-top: 1px solid #d6d6d6;
+}
+
+/* =========================
+   FOOTER UPGRADE
+========================= */
+
+.footer {
+  clear: both;
+  background: linear-gradient(to right, #212529, #343a40);
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #ffc107;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/* =========================
+   SMOOTH PAGE LINKS
+========================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   BETTER BODY BACKGROUND
+========================= */
+
+body {
+  background: #f5f7fa;
+}
+
+/* =========================
+   RESPONSIVE LAYOUT
+========================= */
+
+@media (max-width: 768px) {
+
+  .content,
+  .sidebar {
+    width: 100%;
+    float: none;
+  }
+
+  .sidebar {
+    border-left: none;
+    border-top: 4px solid #032e70;
+  }
+}
