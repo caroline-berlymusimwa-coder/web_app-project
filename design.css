@@ -396,3 +396,10 @@ body {
     border-top: 4px solid #032e70;
   }
 }
+.content img {
+    width: 3cm;
+    height: 4cm;
+    float: left;
+    margin-right: 15px;
+    object-fit: cover;
+}
