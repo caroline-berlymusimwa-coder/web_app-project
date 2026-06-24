@@ -10,7 +10,7 @@
 
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #f8f9fa;
+  background-color: #fafaf8;
   background: #f5f7fa;
   color: #333;
   line-height: 1.6;
@@ -163,7 +163,7 @@ body {
 .account-card {
   border-radius: 15px;
   border: none;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px #00000014;
 }
 
 .account-card:hover {
@@ -189,7 +189,7 @@ body {
   background: white;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px #00000014;
 }
 
 /* =========================
