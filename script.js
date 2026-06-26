@@ -26,9 +26,8 @@ function signIn() {
     document.getElementById("orderSection")
     .style.display = "block";
 }
-// ORDER PAGE
 
-// BOOK HAVEN ORDER SYSTEM
+
 
 const books = {
 
