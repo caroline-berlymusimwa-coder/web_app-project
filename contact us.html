@@ -48,16 +48,22 @@
 
 <p>
 To order a book, you must first sign in.
-<a href="signin.html">Click here to Sign In</a>
+<a href="sig.html">Click here to Sign In</a>
 </p>
 
 <form id="orderForm">
 
-<label for="customerName">Full Name</label> <input type="text" id="customerName" class="form-control" required>
+<label for="customerName">Full Name</label>
+ <input type="text" id="customerName" class="form-control" required>
+ <p id="nameError" class="error"></p>
 
 <br><br>
-
-<label for="category">Book Category</label> <select id="category" class="form-control">
+<label for="customerEmail">Email Address</label> 
+<input type="email" id="customerEmail" class="form-control" required>
+<p id="emailError" class="error"></p>
+<br><br>
+<label for="category">Book Category</label> 
+<select id="category" class="form-control">
 
 <option value="">Select Category</option>
 
@@ -73,8 +79,7 @@ To order a book, you must first sign in.
 <br><br>
 
 <label for="book">Select Book</label>
-
-<select id="book" class="form-control">
+<select id="book" >
 
 <option>Select Category First</option>
 
@@ -86,25 +91,26 @@ To order a book, you must first sign in.
 
 <label for="requestedBook">Book Title</label>
 
-<input type="text" id="requestedBook" class="form-control" placeholder="Enter book title">
+<input type="text" id="requestedBook"  placeholder="Enter book title">
 
 <br><br>
 
 <label for="author"> Author Name </label>
 
-<input type="text" id="author" class="form-control" placeholder="Enter author name">
+<input type="text" id="author"  placeholder="Enter author name">
 
 <br><br>
 
 <label for="message"> Additional Notes </label>
 
-<textarea id="message" rows="5" class="form-control"> </textarea>
+<textarea id="message" rows="5" > </textarea>
 
 <br><br>
 
 <button type="submit" class="btn-custom"> Submit Order </button>
-
-</form>a
+<p id="orderError" class="error"></p>
+<p id="orderSuccess" class="success"></p>
+</form>
 
 </div>
 
@@ -191,11 +197,7 @@ reading recommendations, and exclusive promotions
 
 <script src="script.js"></script>
 
+
 </body>
 </html>
 
-</body>
-
-
-</form>
-</html>

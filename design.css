@@ -13,11 +13,7 @@ body {
   color: #333;
   line-height: 1.6;
 }
-
-
 /* NAVBAR*/
-
-
 .topnav {
     background-color: #0d2755;
     overflow: hidden;
@@ -60,7 +56,7 @@ body {
       #0000008c,
       #0000008c
     ),
-    url("https://images.unsplash.com/photo-1521587760476-6c12a4b040da");
+    url("https://www.bing.com/images/search?view=detailV2&ccid=nLf9HV38&id=DB3DF45135F611EF299D558AE1D556B437549E74&thid=OIP.nLf9HV38rks1BAuODGk_HQHaE8&mediaurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.9cb7fd1d5dfcae4b35040b8e0c693f1d%3Frik%3DdJ5UN7RW1eGKVQ%26riu%3Dhttp%253a%252f%252fwww.shutterstock.com%252fblog%252fwp-content%252fuploads%252fsites%252f5%252f2016%252f09%252fgeorge-peabody-library-1.jpg%26ehk%3DpKkkKQn3Mo13Dmnpib6xlI%252fUgJoCsb0pdoyBOGJSPpc%253d%26risl%3D1%26pid%3DImgRaw%26r%3D0&exph=2400&expw=3600&q=library&FORM=IRPRST&ck=7B6F4184159A513BDA6054EFF50E4007&selectedIndex=1&itb=0&cw=1145&ch=529&ajaxhist=0&ajaxserp=0");
   background-size: cover;
   background-position: center;
   min-height: 200px;
@@ -149,8 +145,6 @@ form input[type="submit"]:hover,
 form button:hover {
     background-color: #063375;
 }
-
-
 /* FOOTER */
 
 footer {
@@ -169,10 +163,6 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-
-
-
-
 /* PAGE LAYOUT */
 
 .content {
@@ -182,8 +172,6 @@ footer a:hover {
   background-color: #ffffff;
   min-height: 800px;
 }
-
-
 /* SIDEBAR STYLING */
 
 .sidebar {
@@ -210,7 +198,6 @@ footer a:hover {
 .sidebar a:hover {
   color: #07b0ff;
 }
-
 /* BOOK SECTION EFFECTS */
 
 .content h3 {
@@ -294,12 +281,7 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
-
-/*
-   RESPONSIVE LAYOUT
-========================= */
+/*RESPONSIVE LAYOUT*/
 
 @media (max-width: 768px) {
 
@@ -341,4 +323,13 @@ html {
   
   transform: translateX(8px);
   cursor: pointer;
+}
+.error{
+    color:#8c1111;
+    font-weight:bold;
+}
+
+.success{
+    color:#008000;
+    font-weight:bold;
 }

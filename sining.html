@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Book Haven - Sign In</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
 
@@ -63,11 +64,6 @@ h1{
     backdrop-filter:blur(5px);
 }
 
-/* Labels *?
-label{
-    font-weight:600;
-    color:#12054b;
-}
 
 /* Inputs */
 input{
@@ -183,6 +179,7 @@ Welcome back to Book Haven! Sign in to explore new arrivals, manage your account
 
 <p id="successMessage"></p>
 
+<script src="script.js"></script>
 <script>
 
 document.getElementById("signinForm").addEventListener("submit", function(event){
@@ -193,36 +190,42 @@ document.getElementById("signinForm").addEventListener("submit", function(event)
     document.getElementById("passwordError").textContent = "";
     document.getElementById("successMessage").textContent = "";
 
-    let isValid = true;
-
     const login = document.getElementById("login").value.trim();
     const password = document.getElementById("password").value;
 
+    let isValid = true;
+
     if(login === ""){
-        document.getElementById("loginError").textContent =
-        "Email or phone number is required.";
+        document.getElementById("loginError").textContent = "Email or phone number is required.";
         isValid = false;
     }
 
     if(password === ""){
-        document.getElementById("passwordError").textContent =
-        "Password is required.";
+        document.getElementById("passwordError").textContent = "Password is required.";
         isValid = false;
     }
 
-    if(isValid){
+    if(!isValid) return;
+
+    // Check against registered users from script.js
+    if(users[login] && users[login] === password){
+
+        localStorage.setItem("signedIn", "true");
+        localStorage.setItem("email", login);
 
         document.getElementById("successMessage").textContent =
-        "Login successful! Welcome back to Book Haven.";
-
-        document.getElementById("successMessage").className =
-        "success";
+            "Login successful! Welcome back to Book Haven.";
+        document.getElementById("successMessage").className = "success";
 
         document.getElementById("signinForm").reset();
 
         setTimeout(function(){
             window.location.href = "contact us.html";
-        }, 2000);
+        }, 1500);
+
+    } else {
+        document.getElementById("passwordError").textContent =
+            "Incorrect email or password. Please sign up first if you don't have an account.";
     }
 
 });

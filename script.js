@@ -1,34 +1,33 @@
 let signedIn = false;
 
+const users = {
+    "caroline@gmail.com": "Book123!",
+    "john@gmail.com": "Password1!",
+    "mary@gmail.com": "Reader2026!"
+};
 function signIn() {
+    const email = document.getElementById("login").value.trim();
+    const password = document.getElementById("password").value;
+    const message = document.getElementById("loginMessage");
 
-    const login =
-        document.getElementById("login").value;
-
-    const password =
-        document.getElementById("password").value;
-
-    if(login === "" || password === "") {
-
-        document.getElementById("loginMessage")
-        .innerHTML =
-        "Please enter login details.";
-
+    if (email === "" || password === "") {
+        message.innerHTML = "Please enter your email and password.";
         return;
     }
 
-    signedIn = true;
+    if (users[email] && users[email] === password) {
+        localStorage.setItem("signedIn", "true");
+        localStorage.setItem("email", email);
 
-    document.getElementById("loginMessage")
-    .innerHTML =
-    "Successfully signed in.";
+        message.innerHTML = "Successfully signed in.";
 
-    document.getElementById("orderSection")
-    .style.display = "block";
+        setTimeout(function () {
+            window.location.href = "contact us.html";
+        }, 1000);
+    } else {
+        message.innerHTML = "Wrong email or password. Please sign up first.";
+    }
 }
-
-
-
 const books = {
 
     fiction: [
@@ -114,8 +113,7 @@ if(category && book){
 
         const selectedCategory = this.value;
 
-        book.innerHTML =
-        '<option value="">Select a Book</option>';
+        book.innerHTML = '<option value="">Select a Book</option>';
 
         if(books[selectedCategory]){
 
@@ -135,4 +133,56 @@ if(category && book){
 
     });
 
+}
+
+
+
+
+function requireSignIn() {
+    const signedIn = localStorage.getItem("signedIn");
+    if (signedIn !== "true") {
+        alert("You must sign in before placing an order.");
+        window.location.href = "sining.html";
+    }
+}
+
+// ORDER FORM
+const orderForm = document.getElementById("orderForm");
+
+if(orderForm){
+
+    orderForm.addEventListener("submit", function(event){
+
+        event.preventDefault();
+        console.log(localStorage.getItem("signedIn"));
+
+        const orderError =
+        document.getElementById("orderError");
+
+        const orderSuccess =
+        document.getElementById("orderSuccess");
+
+        orderError.innerHTML = "";
+        orderSuccess.innerHTML = "";
+
+        if(localStorage.getItem("signedIn") !== "true"){
+
+            orderError.innerHTML =
+            "You must sign in before ordering.";
+
+            return;
+        }
+
+        orderSuccess.innerHTML =
+        "Order submitted successfully!";
+
+        orderForm.reset();
+
+    });
+
+}
+if(orderForm &&
+   localStorage.getItem("signedIn") !== "true"){
+    document.getElementById("orderError").innerHTML =
+    "You must sign in before ordering a book.";a
 }
