@@ -28,7 +28,7 @@ body{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-}
+} 
 
 /* Title */
 h1{
@@ -281,13 +281,11 @@ document.getElementById("registrationForm").addEventListener("submit", function(
     /* Confirm Password Validation */
 
     if(confirmPassword === ""){
-        document.getElementById("confirmPasswordError").textContent =
-        "Please confirm your password.";
+        document.getElementById("confirmPasswordError").textContent = "Please confirm your password.";
         isValid = false;
     }
     else if(confirmPassword !== password){
-        document.getElementById("confirmPasswordError").textContent =
-        "Passwords do not match.";
+        document.getElementById("confirmPasswordError").textContent = "Passwords do not match.";
         isValid = false;
     }
 
@@ -295,17 +293,13 @@ document.getElementById("registrationForm").addEventListener("submit", function(
 
     if(isValid){
 
-        document.getElementById("successMessage").textContent =
-        "Registration successful!";
-
-        document.getElementById("successMessage").className =
-        "success";
-
+        document.getElementById("successMessage").textContent = "Registration successful!";
+        document.getElementById("successMessage").className ="success";
         document.getElementById("registrationForm").reset();
 
     }
      setTimeout(function(){
-            window.location.href = "index.html";
+            window.location.href = "contact us.html";
         }, 2000);
 
 });

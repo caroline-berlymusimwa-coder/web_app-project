@@ -1,6 +1,4 @@
-/* 
-   GLOBAL STYLES
-*/
+/*  GLOBAL STYLES */
 
 * {
   margin: 0;
@@ -17,9 +15,7 @@ body {
 }
 
 
-/* =========================
-   NAVBAR
-========================= */
+/* NAVBAR*/
 
 
 .topnav {
@@ -86,9 +82,7 @@ body {
   font-size: 1.2rem;
 }
 
-/* =========================
-   SECTIONS
-========================= */
+/*  SECTIONS */
 
 .section-title {
   text-align: center;
@@ -101,44 +95,7 @@ body {
   padding: 60px 0;
 }
 
-/* =========================
-   BOOK CARDS
-========================= */
-
-.book-card {
-  border: none;
-  border-radius: 15px;
-  overflow: hidden;
-  transition: 0.3s;
-  box-shadow: 0 4px 12px #00000014;
-}
-
-.book-card:hover {
-  transform: translateY(-8px);
-}
-
-.book-card img {
-  height: 300px;
-  object-fit: cover;
-}
-
-.book-card .card-body {
-  text-align: center;
-}
-
-.book-card h5 {
-  font-weight: 600;
-}
-
-.price {
-  color: #198754;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-/* =========================
-   BUTTONS
-========================= */
+/* BUTTONS */
 
 .btn-custom {
   background: #0d6efd;
@@ -154,22 +111,14 @@ body {
   transform: translateY(-2px);
 }
 
-/* =========================
-   FORMS
-========================= */
-
-/* =========================
-   FORM STYLING
-========================= */
-
 form {
     width: 500px;
     max-width: 90%;
     margin: 30px auto;
     padding: 25px;
-    background-color: rgb(136, 160, 196);
+    background-color: #88a0c4;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px #0000001a;
 }
 
 form label {
@@ -177,9 +126,7 @@ form label {
     color: #09449e;
 }
 
-form input,
-form select,
-form textarea {
+form input, form select, form textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -202,29 +149,9 @@ form input[type="submit"]:hover,
 form button:hover {
     background-color: #063375;
 }
-/* =========================
-   FAQ PAGE
-========================= */
 
-.accordion-button:not(.collapsed) {
-  background-color: #e9f2ff;
-  color: #0d6efd;
-}
 
-/* =========================
-   CONTACT PAGE
-========================= */
-
-.contact-box {
-  background: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px #00000014;
-}
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
   background: #212529;
@@ -243,30 +170,10 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
 
-@media (max-width: 768px) {
-  .banner {
-    min-height: 350px;
-  }
 
-  .banner h1 {
-    font-size: 2rem;
-  }
 
-  .banner p {
-    font-size: 1rem;
-  }
-
-  .section-padding {
-    padding: 40px 0;
-  }
-}
-/* =========================
-   PAGE LAYOUT
-========================= */
+/* PAGE LAYOUT */
 
 .content {
   width: 75%;
@@ -277,9 +184,7 @@ footer a:hover {
 }
 
 
-/* =========================
-   SIDEBAR STYLING
-========================= */
+/* SIDEBAR STYLING */
 
 .sidebar {
   width: 25%;
@@ -299,16 +204,14 @@ footer a:hover {
 .sidebar p,
 .sidebar li,
 .sidebar a {
-  color: rgb(7, 7, 7);
+  color: #070707;
 }
 
 .sidebar a:hover {
   color: #07b0ff;
 }
 
-/* =========================
-   BOOK SECTION EFFECTS
-========================= */
+/* BOOK SECTION EFFECTS */
 
 .content h3 {
   transition: all 0.3s ease;
@@ -323,9 +226,7 @@ footer a:hover {
   cursor: pointer;
 }
 
-/* =========================
-   HIGHLIGHT TEXT
-========================= */
+/*HIGHLIGHT TEXT */
 
 .highlight {
   background-color: #fff3cd;
@@ -335,9 +236,7 @@ footer a:hover {
   font-weight: bold;
 }
 
-/* =========================
-   BOOK CATEGORY HEADINGS
-========================= */
+/*HEADINGS*/
 
 .content h2 {
   background-color: #09449e;
@@ -356,9 +255,7 @@ footer a:hover {
   margin-bottom: 20px;
 }
 
-/* =========================
-   HORIZONTAL LINES
-========================= */
+/* HORIZONTAL LINES */
 
 .content hr {
   margin: 25px 0;
@@ -366,9 +263,7 @@ footer a:hover {
   border-top: 1px solid #d6d6d6;
 }
 
-/* =========================
-   FOOTER UPGRADE
-========================= */
+/* FOOTER UPGRADE */
 
 .footer {
   clear: both;
@@ -393,23 +288,16 @@ footer a:hover {
   color: white;
 }
 
-/* =========================
-   SMOOTH PAGE LINKS
-========================= */
+/*SMOOTH PAGE LINKS */
 
 html {
   scroll-behavior: smooth;
 }
 
-/* =========================
-   BETTER BODY BACKGROUND
-========================= */
 
-body {
-  background: #d6dfec;
-}
 
-/* =========================
+
+/*
    RESPONSIVE LAYOUT
 ========================= */
 
@@ -424,6 +312,21 @@ body {
   .sidebar {
     border-left: none;
     border-top: 4px solid #032e70;
+  }
+   .banner {
+    min-height: 350px;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .section-padding {
+    padding: 40px 0;
   }
 }
 .content img {
