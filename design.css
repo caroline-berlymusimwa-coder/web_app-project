@@ -56,7 +56,7 @@ body {
       #0000008c,
       #0000008c
     ),
-    url("https://www.bing.com/images/search?view=detailV2&ccid=nLf9HV38&id=DB3DF45135F611EF299D558AE1D556B437549E74&thid=OIP.nLf9HV38rks1BAuODGk_HQHaE8&mediaurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.9cb7fd1d5dfcae4b35040b8e0c693f1d%3Frik%3DdJ5UN7RW1eGKVQ%26riu%3Dhttp%253a%252f%252fwww.shutterstock.com%252fblog%252fwp-content%252fuploads%252fsites%252f5%252f2016%252f09%252fgeorge-peabody-library-1.jpg%26ehk%3DpKkkKQn3Mo13Dmnpib6xlI%252fUgJoCsb0pdoyBOGJSPpc%253d%26risl%3D1%26pid%3DImgRaw%26r%3D0&exph=2400&expw=3600&q=library&FORM=IRPRST&ck=7B6F4184159A513BDA6054EFF50E4007&selectedIndex=1&itb=0&cw=1145&ch=529&ajaxhist=0&ajaxserp=0");
+    url("https://images.unsplash.com/photo-1521587760476-6c12a4b040da");
   background-size: cover;
   background-position: center;
   min-height: 200px;
@@ -254,7 +254,7 @@ footer a:hover {
 
 .footer {
   clear: both;
-  background: linear-gradient(to right, #212529, #343a40);
+  background: linear-gradient(to right, #113470, #343a40);
   color: white;
   text-align: center;
   padding: 25px;
