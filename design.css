@@ -42,6 +42,22 @@ body {
 }
 .topnav-right {
     float: right;
+    background-color: #0d2755;
+
+}
+.topnav-right a{
+  float:inline-end;
+  color:f2f2f2;
+  display:block;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav-rignt a:hover {
+    background-color: #aaaed6;
+    color: #333;
 }
 .banner {
   background: linear-gradient(
